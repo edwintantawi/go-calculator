@@ -35,7 +35,7 @@ func ItoP(stmt string) string {
 		}
 
 		for i := len(operators) - 1; i >= 0; i-- {
-			if operatorLevel[operators[i]] < currentLevel || currentLevel == 3 {
+			if operatorLevel[operators[i]] < currentLevel || currentLevel == operatorLevel["^"] {
 				break
 			}
 
