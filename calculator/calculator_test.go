@@ -95,10 +95,4 @@ var _ = Describe("Calculator", func() {
 		Expect(err).To(BeNil())
 		Expect(c).To(Equal(256.0))
 	})
-
-	It("Should return 2 ^ 2 ^ 3 calculation result correctly", func() {
-		c, err := calculator.Calculate("2 ^ 2 ^ 3")
-		Expect(err).To(BeNil())
-		Expect(c).To(Equal(256.0))
-	})
 })
